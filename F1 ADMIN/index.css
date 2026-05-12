@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    background-color: #949498; /* Gray bottom background from image */
+    font-family: sans-serif;
+}
+
+/* HEADER MODULE */
+.red-header {
+    background-color: #e10600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 50px;
+}
+.logo { height: 100px; }
+.header-right { display: flex; align-items: center; gap: 20px; }
+.store-box { background: white; color: black; padding: 10px 25px; font-weight: bold; text-decoration: none; font-size: 14px; }
+.login-link { color: #e10600; background: white; padding: 10px 15px; text-decoration: none; font-weight: bold; font-size: 14px; border: 1px solid white; }
+
+/* HERO SECTION (Red Bull Car) */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background: black;
+}
+.hero-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    color: white;
+}
+.hero-text h1 { font-size: 80px; margin: 0; line-height: 0.9; font-weight: 900; letter-spacing: -2px; }
+.hero-text span { color: #949498; }
+
+/* LOGIN FORM MODULE */
+.login-wrapper {
+    padding: 60px 50px;
+    display: flex;
+    justify-content: center;
+}
+.login-container {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+}
+
+.login-left { flex: 1; }
+.login-left h2 { font-size: 40px; color: #e10600; margin: 0; }
+.login-left p { color: black; font-weight: bold; margin-top: 10px; }
+.login-left a { color: #e10600; }
+
+.login-right { flex: 2; }
+.input-group { margin-bottom: 30px; position: relative; }
+.input-group label { display: block; font-weight: bold; font-size: 14px; margin-bottom: 5px; color: black; }
+.input-group input { 
+    width: 100%; 
+    height: 40px; 
+    border: none; 
+    background: white; 
+    padding: 0 10px;
+}
+.forgot { 
+    display: block; 
+    text-align: right; 
+    color: #e10600; 
+    font-size: 12px; 
+    font-weight: bold; 
+    text-decoration: underline; 
+    margin-top: 5px;
+}

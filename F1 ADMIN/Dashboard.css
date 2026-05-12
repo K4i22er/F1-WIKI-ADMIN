@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    background-color: #949498; /* Gray bottom background from image */
+    font-family: sans-serif;
+}
+
+/* HEADER MODULE */
+.red-header {
+    background-color: #e10600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 50px;
+}
+.admin-body { background-color: #fff; }
+
+.admin-container {
+    display: flex;
+    height: calc(100vh - 50px);
+}
+
+.admin-sidebar {
+    width: 300px;
+    background-color: #949498;
+    border-right: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-profile {
+    text-align: center;
+    background: white;
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.profile-img { width: 80px; height: 80px; object-fit: cover; margin: 10px 0; }
+
+.sidebar-links { flex-grow: 1; display: flex; flex-direction: column; }
+
+.sidebar-item {
+    background: white;
+    border-bottom: 2px solid black;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.active-admin { color: #e10600; }
+
+.sidebar-logout {
+    margin-top: auto;
+    background: white;
+    padding: 15px 20px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.admin-content {
+    flex-grow: 1;
+    padding: 40px 60px;
+    background: white;
+}
+
+.add-photo-box { text-align: left; margin-bottom: 40px; }
+.photo-placeholder { width: 100px; height: 100px; background: #ddd; display: flex; align-items: center; justify-content: center; font-size: 50px; }
+.add-photo-box p { font-weight: bold; font-size: 14px; margin-top: 10px; }
+
+.form-group { margin-bottom: 50px; }
+.form-group label { display: block; font-size: 30px; font-weight: 900; margin-bottom: 10px; }
+.form-group input { width: 100%; border: none; border-bottom: 2px solid black; font-size: 20px; }
+
+.form-actions { display: flex; justify-content: space-between; margin-top: 100px; font-weight: bold; }
+.add-btn { color: #e10600; cursor: pointer; }
+.remove-btn { cursor: pointer; }
+
+.standings-body .table-row span { border-left: 2px solid white; padding: 10px; text-align: center; }
+.standings-body .table-row span:first-child { border-left: none; text-align: left; padding-left: 20px; }
+
+.col-driver, .driver-data { flex: 2; }
+.col-pts, .pts-data { flex: 1; }
+.col-wins, .wins-data { flex: 1; }
+.col-pod, .pod-data { flex: 1; }
